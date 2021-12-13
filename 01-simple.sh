@@ -1,5 +1,4 @@
 ls -l
-echo my first shell script
 
 a=5
 b=abc
@@ -14,3 +13,6 @@ function foo() {
 read -p 'Enter your age: ' age
 echo ${age}
 
+if [ ${age} -ge 18 ]; then
+    echo You are adult
+fi
