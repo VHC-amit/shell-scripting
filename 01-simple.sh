@@ -5,15 +5,8 @@ a=5
 b=abc
 c=true
 
-echo my first variable ${a}
-echo my second variable ${b}
-echo my third variable ${c}
+function foo() {
+    echo first fucntion
+}
 
-
-
-# shellcheck disable=SC1009
-if [ ${a} == ${b} ]; then
-echo if condition
-else
-  echo else condition executed
-fi
+foo
