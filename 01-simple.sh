@@ -15,4 +15,6 @@ echo ${age}
 
 if [ ${age} -ge 18 ]; then
     echo You are adult
+elif [ ${age} -le 18 ]; then
+    echo You are minor
 fi
