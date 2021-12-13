@@ -6,10 +6,11 @@ b=abc
 c=true
 
 function foo() {
-#    echo first fucntion
+    echo first fucntion
 }
 
-foo
+#foo
 
 read -p 'Enter your age: ' age
 echo ${age}
+
