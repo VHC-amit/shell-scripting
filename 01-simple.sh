@@ -12,6 +12,8 @@ echo my third variable ${c}
 
 
 # shellcheck disable=SC1009
-if [ ${a} != ${b} ]; then
+if [ ${a} == ${b} ]; then
 echo if condition
+else
+  echo else condition executed
 fi
