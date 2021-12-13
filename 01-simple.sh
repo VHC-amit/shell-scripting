@@ -10,13 +10,17 @@ function foo() {
 
 #foo
 
+
 read -p 'Enter your age: ' age
-echo ${age}
+
+if [ -z ${age} ]; then
+    echo Please enter valid age
+  exit
+fi
 
 if [ ${age} -ge 18 ]; then
     echo You are adult
 elif [ ${age} -le 18 ]; then
     echo You are minor
-elif [ -z ${age} ]; then
-    echo Please enter valid age
+
 fi
