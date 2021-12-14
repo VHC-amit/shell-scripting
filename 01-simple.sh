@@ -16,3 +16,10 @@ echo ${2}
 echo ${*}
 echo ${@}
 echo ${#}
+
+
+if [ echo ${1} -ge 0 ]; then
+    echo passed
+else
+  echo failed
+fi
